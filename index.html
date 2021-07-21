@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Calculator/index.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="showResult">
+      <input type="text" id="input" readonly>
+      <input type="text" id="output" readonly>
+    </div>
+    <div class="wrap_1">
+      <div style="background-color: darkgrey; color: black;" onclick="allclear()">AC</div>
+      <div style="background-color: darkgrey; color: black;">+/-</div>
+      <div style="background-color: darkgrey; color: black;" onclick="divide()">%</div>
+      <div style="background-color: orange;" onclick="checkSign('/')">/</div>
+    </div>
+    <div class="wrap_2">
+      <div onclick="send(7)">7</div>
+      <div onclick="send(8)">8</div>
+      <div onclick="send(9)">9</div>
+      <div style = "background-color: orange;" onclick="checkSign('*')">X</div>
+    </div>
+    <div class="wrap_3">
+      <div onclick="send(4)">4</div>
+      <div onclick="send(5)">5</div>
+      <div onclick="send(6)">6</div>
+      <div style="background-color: orange;" onclick="checkSign('-')">-</div>
+    </div>
+    <div class="wrap_4">
+      <div onclick="send(1)">1</div>
+      <div onclick="send(2)">2</div>
+      <div onclick="send(3)">3</div>
+      <div style="background-color: orange;" onclick="checkSign('+')">+</div>
+    </div>
+    <div class="wrap_5">
+      <div id="specialBt" onclick="send(0)">0</div>
+      <div>.</div>
+      <div style="background-color: orange;" onclick="calculate()">=</div>
+    </div>
+  </div>
+
+  <script src="/Calculator/index.js"></script>
+</body>
+</html>
